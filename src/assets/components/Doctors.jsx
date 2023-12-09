@@ -6,10 +6,10 @@ import John from '../images/John.png';
 
 export default function Doctors() {
   return (
-    <Container fluid className=" mt-5" style={{ background: 'linear-gradient(to right, #2359F4, #4BC0F2)', paddingTop: '4rem' }}>
+    <Container fluid className="mt-5" style={{ background: 'linear-gradient(to right, #2359F4, #4BC0F2)', paddingTop: '4rem' }}>
         <h2 className="text-white text-center mb-3">Our Dedicated Doctors Team</h2>
-        <Row className='pb-5'>
-            <Col>
+        <Row>
+            <Col xs={12} lg={4} className='my-4'>
                 <Card
                     hoverable
                     cover={<img alt="example" src={Maran} className='p-4 pb-2'/>}
@@ -17,7 +17,7 @@ export default function Doctors() {
                     <Container fluid>
                     <Row>
                         <Col>
-                            <p className='fs-2 fw-bold mb-0' style={{color: '#002B9A'}}>Dr. Maran </p>
+                            <p className='fs-2 fw-bold mb-0' style={{color: '#002B9A'}}>Dr. Maran</p>
                             <p className='fs-2'>Cardiologist</p>
                         </Col>
                         
@@ -28,7 +28,7 @@ export default function Doctors() {
                     </Container>
                 </Card>
             </Col>
-            <Col>
+            <Col xs={12} lg={4} className='my-4'>
                 <Card
                     hoverable
                     cover={<img alt="example" src={Suganthi} className='p-4 pb-2'/>}
@@ -47,7 +47,7 @@ export default function Doctors() {
                     </Container>
                 </Card>
             </Col>
-            <Col>
+            <Col xs={12} lg={4} className='my-4'>
                 <Card
                     hoverable
                     cover={<img alt="example" src={John} className='p-4 pb-2'/>}
@@ -59,7 +59,7 @@ export default function Doctors() {
                             <p className='fs-2'>Psychiatrist</p>
                         </Col>
                         
-                        <Col className='d-flex align-items-center'>
+                        <Col className='d-flex align-items-center justify-content-end'>
                             <Button className='bg-primary text-light'>View Profile</Button>
                         </Col>
                     </Row>
@@ -68,5 +68,5 @@ export default function Doctors() {
             </Col>
         </Row>
     </Container>
-  )
+  );
 }
