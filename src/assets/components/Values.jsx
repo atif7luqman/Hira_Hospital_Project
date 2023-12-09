@@ -1,24 +1,83 @@
-import * as React from 'react';
-import Card from '@mui/material/Card';
-import CardContent from '@mui/material/CardContent';
-import CardMedia from '@mui/material/CardMedia';
-import Typography from '@mui/material/Typography';
-import { Button, CardActionArea, CardActions } from '@mui/material';
+import { Card } from 'antd';
+import { Container, Row, Col, Image } from 'react-bootstrap';
+import ResIcon from '../images/respect.png'
+import ValuesIcon from '../images/ValuesIcon.png'
+import ExcIcon from '../images/Excellence.png'
+import TeamIcon from '../images/teamwork.png'
+import CompIcon from '../images/compassion.png'
+import IntIcon from '../images/integrity.png'
 
 export default function Values() {
   return (
-    <Card sx={{ maxWidth: 345 }}>
-      <CardActionArea>
-        <CardContent>
-          <Typography gutterBottom variant="h5" component="div">
-            Lizard
-          </Typography>
-          <Typography variant="body2" color="text.secondary">
-            Lizards are a widespread group of squamate reptiles, with over 6,000
-            species, ranging across all continents except Antarctica
-          </Typography>
-        </CardContent>
-      </CardActionArea>
-    </Card>
-  );
+    <Container>
+      <Row className='mt-5'>
+        <Col>
+          <Card 
+            title={ 
+              <div> <Image src={ResIcon} className='m-2'/> Respect</div>
+            }  
+            headStyle={{ background: '#BEDCFF', color: '#285DBE', fontSize: '2.5rem'}}                
+            className='fs-4 border-primary my-3'
+          >
+            We treat all individuals with respect and dignity.
+            We believe that every person deserves to be treated with compassion and kindness 
+          </Card>
+        </Col>
+        <Col>
+          <Card className='d-flex align-items-end justify-content-center mb-3'>
+            <Image src={ValuesIcon} style={{ margin: '15px' }} />
+          </Card>
+        </Col>
+        <Col>
+          <Card 
+            title={ 
+              <div> <Image src={ExcIcon} className='m-2'/> Excellence</div>
+            }  
+            headStyle={{ background: '#BEDCFF', color: '#285DBE', fontSize: '2.5rem'}}                
+            className='fs-4 border-primary my-3'
+          >
+            We are committed to providing excelllent care and services to our patients
+          </Card>
+        </Col>
+      </Row>
+      <Row >
+        <Col>
+          <Card 
+            title={ 
+              <div> <Image src={TeamIcon} className='m-2'/> Teamwork</div>
+            }  
+            headStyle={{ background: '#BEDCFF', color: '#285DBE', fontSize: '2.5rem'}}                
+            className='fs-4 border-primary my-3'
+          >
+            We believe in working collaboratively with our team  members 
+            and other healthcare provide effective care to our patients
+          </Card>
+        </Col>
+        <Col>
+          <Card 
+            title={ 
+              <div> <Image src={CompIcon} className='m-2'/> Compassion</div>
+            }  
+            headStyle={{ background: '#BEDCFF', color: '#285DBE', fontSize: '2.5rem'}}                
+            className='fs-4 border-primary my-3'
+          >
+            We strive to create a welcoming and supportive environment that 
+            puts our patient ease.
+          </Card>
+        </Col>
+        <Col>
+          <Card 
+            title={ 
+              <div> <Image src={IntIcon} className='m-2'/> Respect</div>
+            }  
+            headStyle={{ background: '#BEDCFF', color: '#285DBE', fontSize: '2.5rem'}}                
+            className='fs-4 border-primary my-3 '
+          >
+            We believe in practicing medicine with integrity and honesty. 
+            We are  always put our patient interest first 
+          </Card>
+        </Col>
+      </Row>
+    </Container>
+  )
 }
