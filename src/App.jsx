@@ -7,6 +7,9 @@ import Footer from './assets/components/Footer'
 import Booking from './assets/components/Booking'
 import { Route, Routes } from 'react-router-dom'
 import Departments from './assets/components/Department'
+import Updates from './assets/components/Updates'
+import Message from './assets/components/Message'
+import Who from './assets/components/Who'
 // import departmentsData from './departmentsData.json'
 
 function App() {
@@ -26,6 +29,9 @@ function App() {
       {/* <Departments data={departmentsData} /> */}
       <Departments />
       <Doctors />
+      <Updates />
+      <Message />
+      <Who />
       <Booking />
       <Footer />
     </div>
