@@ -6,22 +6,25 @@ import Doctors from './assets/components/Doctors'
 import Footer from './assets/components/Footer'
 import Booking from './assets/components/Booking'
 import { Route, Routes } from 'react-router-dom'
-
+import Departments from './assets/components/Department'
+// import departmentsData from './departmentsData.json'
 
 function App() {
   return (
     <div>
-      <Routes>
+      {/* <Routes>
         
-        {/* <Route path={'/'} element={<><Header /> <Home /> </>} />
+        <Route path={'/'} element={<><Header /> <Home /> </>} />
         <Route path={'/values'} element={<Values />} />
         <Route path={'/docotrs'} element={<Doctors />} />
-        <Route path='/booking' element={<Booking />} /> */}
+        <Route path='/booking' element={<Booking />} />
         
-      </Routes>
+      </Routes> */}
       <Header />
       <Home />
       <Values />
+      {/* <Departments data={departmentsData} /> */}
+      <Departments />
       <Doctors />
       <Booking />
       <Footer />
