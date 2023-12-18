@@ -29,25 +29,28 @@ export default function Subfooter() {
                 </p>
 
                 <Container className="border rounded-5 border-primary p-2 d-flex flex-column align-items-center">
-      <Row className="w-100">
-        <Col xs={6} className="border rounded-5 border-primary mx-1 px-1">
-          <Form className="d-flex flex-column h-100">
-            <Form.Group controlId="emailInput" className="flex-grow-1">
-              <Form.Control
-                type="email"
-                placeholder="example@gmail.com"
-                style={{ backgroundColor: 'transparent', border: 'none', padding: '5px' }}
-              />
-            </Form.Group>
-          </Form>
-        </Col>
-        <Col className="d-flex justify-content-end align-items-end">
-          <Button className="rounded-5" variant="primary" type="submit">
-            Submit <ArrowForwardIcon />
-          </Button>
-        </Col>
-      </Row>
-    </Container>
+                    <Row className="w-100">
+                        <Col xs={6} className="border rounded-5 border-primary mx-1 px-1">
+                        <Form className="d-flex flex-column h-100">
+                            <Form.Group controlId="emailInput" className="flex-grow-1">
+                            <Form.Control
+                                type="email"
+                                placeholder="example@gmail.com"
+                                style={{
+                                backgroundColor: 'transparent',
+                                border: 'none',
+                                }}
+                            />
+                            </Form.Group>
+                        </Form>
+                        </Col>
+                        <Col className="d-flex justify-content-end align-items-end">
+                        <Button className="rounded-5" variant="primary" type="submit">
+                            Submit <ArrowForwardIcon />
+                        </Button>
+                        </Col>
+                    </Row>
+                </Container>
             </Col>
             <Col md={4}>
             </Col>
