@@ -1,4 +1,4 @@
-import { Container, Row, Col, Button, Form } from "react-bootstrap"
+import { Container, Row, Col, Button, Form, ListGroup } from "react-bootstrap"
 import ArrowForwardIcon from '@mui/icons-material/ArrowForward';
 export default function Subfooter() {
   return (
@@ -28,7 +28,7 @@ export default function Subfooter() {
                     to get the latest new about health from our experts
                 </p>
 
-                <Container className="border rounded-5 border-primary p-2 d-flex flex-column align-items-center">
+                <Container className="border rounded-5 border-primary p-3 d-flex flex-column align-items-center">
                     <Row className="w-100">
                         <Col xs={6} className="border rounded-5 border-primary mx-1 px-1">
                         <Form className="d-flex flex-column h-100">
@@ -52,9 +52,24 @@ export default function Subfooter() {
                     </Row>
                 </Container>
             </Col>
-            <Col md={4}>
+            <Col md={4} className="d-flex justify-content-center align-items-center">
+                <ul className="fs-4" style={{color:'#002B9A', listStyle:'none', fontSize:'15px'}}>
+                    <li>About Us</li>
+                    <li>Departments</li>
+                    <li>Doctors</li>
+                    <li>Appointment</li>
+                </ul>
             </Col>
             <Col md={4}>
+                <Row>
+                    <Col>
+                    </Col>
+                    <Col xs={6} className="border border-primary rounded p-2 px-3 text-white">
+                        <p className="text-center fs-5" style={{color:'#002B9A'}}>Helplines</p>
+                        <p>EMERGENCY &nbsp;&nbsp;&nbsp;&nbsp;1066</p>
+                        <p>Health + Lifeline &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1860-500-1066</p>
+                    </Col>
+                </Row>
             </Col>
         </Row>
     </Container>
