@@ -10,6 +10,8 @@ import Departments from './assets/components/Department'
 import Updates from './assets/components/Updates'
 import Message from './assets/components/Message'
 import Who from './assets/components/Who'
+import Subfooter from './assets/components/Subfooter'
+
 // import departmentsData from './departmentsData.json'
 
 function App() {
@@ -33,6 +35,7 @@ function App() {
       <Message />
       <Who />
       <Booking />
+      <Subfooter/>
       <Footer />
     </div>
   )

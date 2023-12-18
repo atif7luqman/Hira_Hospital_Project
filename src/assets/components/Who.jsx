@@ -12,12 +12,8 @@ export default function Who() {
         </Col>
         <Col md={6} className="d-flex flex-column align-items-start justify-content-center">
         <h2 className="fw-bold fs-1 px-5 pb-4" style={{color:'#BE2E3E'}}>Who We Are</h2>
-        <p className='px-5 text-white'>Lorem Media is a full-service social media agency. We offer businesses innovative  solutions that deliver the right type of audience to you in the most effective strategies possible. We strive to develop a community around your business, polishing your branding, and improving your public relations.
-Social Media is now one of the most powerful marketing tools with the ability to communicate with a target audience in real time.
-
-It's 2019: time to sink or swim.
-
-We are your Social Media Marketing Agency.</p>
+        <p className='px-5 text-white'>Welcome to Hira Hospital – Where Expertise Meets Compassion <br/> <br />
+        Discover exceptional healthcare at Hira Hospital, located in the heart of sukkur. Our dedicated team of skilled professionals combines cutting-edge technology with compassionate care to ensure your well-being. From routine check-ups to specialized treatments, we're here for all your healthcare needs. Choose Hira Hospital for expert, personalized, and quality medical services. Your health is our priority.</p>
 
         </Col>
         
