@@ -1,6 +1,7 @@
 import { Container, Row, Col, Button, Form, Image } from "react-bootstrap"
 import ArrowForwardIcon from '@mui/icons-material/ArrowForward';
 import icon from '../images/valuesicon.png'
+import { Link } from "react-router-dom";
 
 export default function Subfooter() {
   return (
@@ -60,10 +61,10 @@ export default function Subfooter() {
             </Col>
             <Col md={4} className="d-flex justify-content-center align-items-center">
                 <ul className="fs-4" style={{color:'#002B9A', listStyle:'none', fontSize:'15px'}}>
-                    <li>About Us</li>
-                    <li>Departments</li>
-                    <li>Doctors</li>
-                    <li>Appointment</li>
+                    <Link to='/about' style={{ textDecoration: 'none' }}><li>About Us</li></Link>
+                    <Link to='/departments' style={{ textDecoration: 'none' }}><li>Departments</li></Link>
+                    <Link to='/doctors' style={{ textDecoration: 'none' }}><li>Doctors</li></Link>
+                    <Link to='/appointment' style={{ textDecoration: 'none' }}><li>Appointment</li></Link>
                 </ul>
             </Col>
             <Col md={4}>

@@ -1,6 +1,6 @@
 import { Container, Row, Col } from 'react-bootstrap';
 import { CopyrightOutlined, FacebookFilled, InstagramFilled, LinkedinFilled, YoutubeFilled } from '@ant-design/icons';
-import { Link } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 
 export default function Footer() {
   return (
@@ -10,10 +10,10 @@ export default function Footer() {
           <p className='pt-2'><CopyrightOutlined className='px-2 fs-6'/> Copyright 2023. Kamalesh J. All Rights Reserved. </p>
         </Col>
         <Col xs={12} md={4} className='d-flex align-items-center justify-content-center'>
-          <FacebookFilled className='fs-5 px-1' />
-          <YoutubeFilled className='fs-5 px-1' />
-          <InstagramFilled className='fs-5 px-1' />
-          <LinkedinFilled className='fs-5 p-3 px-1' />
+          <NavLink to={'https://web.facebook.com/'} rel='noopener' target='_blank' style={{ color: 'white' }}><FacebookFilled className='fs-5 px-1' /></NavLink>
+          <NavLink to={'https://youtube.com/'} rel='noopener' target='_blank' style={{ color: 'white' }}><YoutubeFilled className='fs-5 px-1' /></NavLink>
+          <NavLink to={'https://web.instagram.com/'} rel='noopener' target='_blank' style={{ color: 'white' }}><InstagramFilled className='fs-5 px-1' /></NavLink>
+          <NavLink to={'https://web.linkedin.com/'} rel='noopener' target='_blank' style={{ color: 'white' }}><LinkedinFilled className='fs-5 p-3 px-1' /></NavLink>
         </Col>
         <Col xs={12} md={4} className='d-flex align-items-center justify-content-center'>
           

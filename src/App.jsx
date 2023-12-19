@@ -17,16 +17,19 @@ import Subfooter from './assets/components/Subfooter'
 function App() {
   return (
     <div>
-      {/* <Routes>
+      <Header />
+      <Routes>
         
-        <Route path={'/'} element={<><Header /> <Home /> </>} />
+        <Route path={'/'} element={<Home />} />
+        <Route path='/about' element={<Who />} />
+        <Route path='/departments' element={<Departments />} />
         <Route path={'/values'} element={<Values />} />
         <Route path={'/docotrs'} element={<Doctors />} />
-        <Route path='/booking' element={<Booking />} />
+        <Route path='/appointment' element={<Booking />} />
         
-      </Routes> */}
-      <Header />
-      <Home />
+      </Routes>
+      
+      {/* <Home />
       <Values />
       {/* <Departments data={departmentsData} /> */}
       <Departments />
@@ -34,7 +37,7 @@ function App() {
       <Updates />
       <Message />
       <Who />
-      <Booking />
+      <Booking /> */}
       <Subfooter/>
       <Footer />
     </div>

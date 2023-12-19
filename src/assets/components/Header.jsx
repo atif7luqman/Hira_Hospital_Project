@@ -10,19 +10,19 @@ function Header() {
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
         <Navbar.Collapse id="responsive-navbar-nav">
           <Nav className="me-auto d-flex justify-content-center align-items-center text-white">
-            <Nav.Link href="#features" className='text-white'>
+            <Nav.Link href="https://web.facebook.com/" rel='noopenre' target='_blank' className='text-white'>
               <FacebookFilled />
             </Nav.Link>
             |            
-            <Nav.Link href="#features" className='text-white'>
+            <Nav.Link href="https://youtube.com" rel='noopener' target='_blank' className='text-white'>
               <YoutubeFilled />
             </Nav.Link>
             |            
-            <Nav.Link href="#features" className='text-white'>
+            <Nav.Link href="https://instagram.com" rel='noopener' target='_blank' className='text-white'>
               <InstagramFilled />
             </Nav.Link>
             |
-            <Nav.Link href="#features" className='text-white'>
+            <Nav.Link href="https://www.linkedin.com/" rel='noopener' target='_blank' className='text-white'>
               <LinkedinFilled />
             </Nav.Link>
           </Nav>
