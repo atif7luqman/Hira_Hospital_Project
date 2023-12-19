@@ -1,6 +1,6 @@
 import React from 'react';
 import { Container, Row, Col, Image } from 'react-bootstrap';
-import Icon from '../images/Icon.png';
+import Icon from '../images/icon.png';
 import { PhoneFilled, EnvironmentFilled, MailFilled } from '@ant-design/icons';
 
 export default function Footer2() {
