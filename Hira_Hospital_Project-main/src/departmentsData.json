@@ -1,8 +1,0 @@
-[
-  { "icon": "emergency-img.png", "title": "Emergency Department" },
-  { "icon": "pediatrics-img.png", "title": "Pediatric Department" },
-  { "icon": "gynecology-img.png", "title": "Obstetrics and Gynecology Department" },
-  { "icon": "cardiology-img.png", "title": "Cardiology Department" },
-  { "icon": "neurology-img.png", "title": "Neurology Department" },
-  { "icon": "pyschiatry-img.png", "title": "Psychiatry Department" }
-]
