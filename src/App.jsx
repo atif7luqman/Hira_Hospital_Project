@@ -11,6 +11,7 @@ import Updates from './assets/components/Updates'
 import Message from './assets/components/Message'
 import Who from './assets/components/Who'
 import Subfooter from './assets/components/Subfooter'
+import Footer2 from './assets/components/Footer2'
 
 // import departmentsData from './departmentsData.json'
 
@@ -38,6 +39,7 @@ function App() {
       <Message />
       <Who />
       <Booking />
+      <Footer2 />
       <Subfooter/>
       <Footer />
     </div>
