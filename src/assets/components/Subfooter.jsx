@@ -1,7 +1,13 @@
-import { Container, Row, Col, Button, Form, ListGroup } from "react-bootstrap"
+import { Container, Row, Col, Button, Form, Image } from "react-bootstrap"
 import ArrowForwardIcon from '@mui/icons-material/ArrowForward';
+import icon from '../images/valuesicon.png'
+
 export default function Subfooter() {
   return (
+    <>
+    <div className="text-center m-5">
+        <Image src={icon}></Image>
+    </div>
     <Container fluid className=" p-5 pt-3" style={{ backgroundColor:'#81BAEE' }}>
         <Row className="align-items-center">
             <Col md={4}>
@@ -73,5 +79,6 @@ export default function Subfooter() {
             </Col>
         </Row>
     </Container>
+    </>
   )
 }
