@@ -4,6 +4,17 @@ import Icon from '../images/icon.png';
 import { PhoneFilled, EnvironmentFilled, MailFilled } from '@ant-design/icons';
 
 export default function Footer2() {
+  const phoneNumber = '(071) 5614111';
+  const emailAddress = 'info@hira.com';
+
+  const handlePhoneClick = () => {
+    window.location.href = `tel:${phoneNumber}`;
+  };
+
+  const handleMailClick = () => {
+    window.location.href = `mailto:${emailAddress}`;
+  };
+
   return (
     <Container fluid className="my-5 pb-5" style={{ backgroundColor: '#81BAEE', paddingTop: '4rem' }}>
       <hr style={{ borderTop: '5px solid #000000' }} />
@@ -12,34 +23,40 @@ export default function Footer2() {
         <Col md={4} className="d-flex align-items-start">
             <div className="d-flex align-items-start">
             <Image src={Icon} />
-            <p className='mt-auto text-end pb-2 fs-3 fw-bold'>Hira Hospital</p>
+            <p className='mt-auto text-end pb-2 fs-3 fw-bold' style={{color:'#BE2E3E'}}>IRA HOSPITAL</p>
             </div>
         </Col>
 
         {/* Second Column */}
-        <Col md={8} className="text-center">
-          <Row>
-            <Col className="text-left">
-              <br /><br /><br />
-              <h5 className="text-black" style={{ fontWeight: 'bold' }}>Hours</h5>
-              <p className="text-black">
-                Monday:       9:00 - 18:00 <br />
-                Tuesday:      9:00 - 18:00 <br />
-                Wednesday:    9:00 - 18:00 <br />
-                Thursday:     9:00 - 18:00 <br />
-                Friday:       9:00 - 18:00
-              </p>
-            </Col>
-            <Col className="text-left">
-              <br /><br /><br />
-              <h5 className="text-black" style={{ fontWeight: 'bold' }}>Contact</h5>
-              <p className="text-black">
-                <PhoneFilled className='fs-5 px-1' />(071) 5614111 <br />
-                <MailFilled className='fs-5 px-1' />info@hira.com <br />
-                <EnvironmentFilled className='fs-5 px-1' />Sukkur, Pakistan
-              </p>
-            </Col>
-          </Row>
+        <Col md={4} className="text-left">
+          <br /><br /><br />
+          <p className="fw-bold fs-2" style={{color:'#BE2E3E'}}> <u> Hours</u></p>
+          <p className="text-light fs-5">
+            Monday:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 9:00 - 18:00 <br />
+            Tuesday:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 9:00 - 18:00 <br />
+            Wednesday:&nbsp;&nbsp;9:00 - 18:00 <br />
+            Thursday:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 9:00 - 18:00 <br />
+            Friday:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 9:00 - 18:00
+          </p>
+        </Col>
+        <Col md={4} className='mt-auto'> 
+          <p className="fw-bold fs-2" style={{color:'#BE2E3E'}}>
+            <u>Contact</u>
+          </p>
+          <p className='text-white fs-5'>
+            <span onClick={handlePhoneClick} style={{ cursor: 'pointer' }}>
+              <PhoneFilled className='me-3' style={{ transform: 'rotate(90deg)' }} />
+              <span >{phoneNumber}</span>
+            </span>
+            <br />
+            <span onClick={handleMailClick} style={{ cursor: 'pointer' }}>
+              <MailFilled className='me-3' />
+              <span>{emailAddress}</span>
+            </span>
+            <br />
+            <EnvironmentFilled className='fs-5 me-3' />
+            Sukkur, Pakistan
+          </p>
         </Col>
       </Row>
     </Container>

@@ -1,8 +1,9 @@
-import {Radio} from 'antd';
+import { Radio } from 'antd';
 import Form from 'react-bootstrap/Form';
 import img from '../images/image.png';
 import { ArrowRightOutlined } from '@ant-design/icons';
-import {Container, Row, Col, Button, Image }from 'react-bootstrap';
+import { Container, Row, Col, Button, Image } from 'react-bootstrap';
+
 const Booking = () => {
   const optionsFor1 = ['Routine Checkup', 'New Patient Visit', 'Specific Concern'];
   const optionsFor2 = ['Pediatric', 'Obstetrics and Gynecology', 'Cardiology', 'Neurology', 'Psychiatry'];
@@ -12,8 +13,8 @@ const Booking = () => {
       <Row justify="center">
         <Col xs={12} md={7}>
           <Container className='px-5 mb-5 '>
-            <p className='fs-4'>BOOK AN<br/>
-            <span className='fw-bold fs-2' style={{ color: '#BE1E31' }}>Appointment</span></p>
+            <p className='fs-4'>BOOK AN<br />
+              <span className='fw-bold fs-2' style={{ color: '#BE1E31' }}>Appointment</span></p>
           </Container>
           <Form>
             <Row>
@@ -85,15 +86,15 @@ const Booking = () => {
 
             <Row justify="center">
               <Col span={24}>
-              <Button className='text-white m-5 py-2 px-5' style={{background: '#BE2E3E', fontSize: '1.5rem', display: 'flex', alignItems: 'center', borderRadius: '1rem'}}>
-                Submit <ArrowRightOutlined />
-              </Button>
+                <Button className='text-white m-5 py-2 px-5' style={{ background: '#BE2E3E', fontSize: '1.5rem', display: 'flex', alignItems: 'center', borderRadius: '1rem' }}>
+                  Submit <ArrowRightOutlined />
+                </Button>
               </Col>
             </Row>
           </Form>
         </Col>
-        <Col xs={12} md={5}>
-          <Image src={img} className='pb-0 mb-0' />
+        <Col xs={12} md={5} className="text-center">
+          <Image src={img} fluid className='pb-0 mb-0' style={{ maxWidth: '100%', maxHeight: '100%' }} />
         </Col>
       </Row>
     </Container>

@@ -9,29 +9,29 @@ export default function Updates() {
       <h2 className="fw-bold fs-1 pb-5 text-center" style={{ color: '#BE2E3E' }}>Daily Hospital Updates</h2>
       <Row xs={1} md={3} className="g-4">
         {/* First Column */}
-        <Col md={4} className="align-self-center text-center">
+        <Col md={4} className="text-center">
           <div className="d-flex flex-column align-items-center">
-            <HeartFilled className='fs-1 text-danger mb-2' />
-            <span className="fw-bold fs-1 text-dark" style={{ color: '##BE2E3E' }}>99%</span>
-            <span className="fw-bold text-danger">Positive Feedback</span>
+            <HeartFilled className='fs-1' style={{color: '#BE2E3E'}} />
+            <span className="my-1 fw-bold fs-1 text-white">99%</span>
+            <span className="fw-bold mb-3" style={{color: '#BE2E3E'}}>Positive Feedback</span>
           </div>
         </Col>
 
         {/* Second Column */}
         <Col md={4} className="text-center">
           <div className="d-flex flex-column align-items-center">
-            <UserOutlined className='fs-1 text-danger' />
-            <span className="fw-bold fs-1 text-dark" style={{ color: '#2359F4' }}>2500+</span>
-            <span className="fs-6 text-danger">happy patients a week</span>
+            <UserOutlined className='fs-1' style={{color: '#BE2E3E'}}/>
+            <span className="m-1 fw-bold fs-1 text-white">2500+</span>
+            <span className="fw-bold mb-3" style={{color: '#BE2E3E'}}>Satisfied Patients</span>
           </div>
         </Col>
 
         {/* Third Column */}
         <Col md={4} className="text-center">
           <div className="d-flex flex-column align-items-center">
-            <MedicineBoxFilled className='fs-1 text-danger' />
-            <span className="fw-bold fs-1 text-dark" style={{ color: '#2359F4' }}>43</span>
-            <span className="fs-6 text-danger">professional doctors</span>
+            <MedicineBoxFilled className='fs-1' style={{color: '#BE2E3E'}}/>
+            <span className="fw-bold fs-1 text-white">43</span>
+            <span className="fw-bold" style={{color: '#BE2E3E'}}>Professional Doctors</span>
           </div>
         </Col>
       </Row>
