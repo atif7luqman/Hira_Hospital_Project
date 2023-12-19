@@ -1,6 +1,6 @@
 import { Container, Row, Col, Button, Form, Image } from "react-bootstrap"
 import ArrowForwardIcon from '@mui/icons-material/ArrowForward';
-import icon from '../images/valuesicon.png'
+import icon from '../images/ValuesIcon.png'
 import { Link } from "react-router-dom";
 
 export default function Subfooter() {
