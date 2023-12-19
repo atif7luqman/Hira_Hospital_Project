@@ -4,7 +4,7 @@ import Img from '../images/Vaccination.png';
 
 export default function Who() {
   return (
-    <Container fluid className="my-5" style={{ background: 'linear-gradient(to right, #4BBDF2, #2359F4)', paddingTop: '1rem' }}>
+    <Container fluid className="mb-5" style={{ background: 'linear-gradient(to right, #4BBDF2, #2359F4)', paddingTop: '1rem' }}>
       <Row xs={1} md={2} className="g-4 align-items-center">
         <Col md={6} className="text-center">
           <Image src={Img} roundedCircle fluid style={{ maxWidth: '100%', maxHeight: '100%' }} />

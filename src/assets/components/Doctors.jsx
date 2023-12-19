@@ -6,7 +6,7 @@ import John from '../images/John.png';
 
 export default function Doctors() {
   return (
-    <Container fluid className="mt-5" style={{ background: 'linear-gradient(to right, #2359F4, #4BC0F2)', paddingTop: '4rem' }}>
+    <Container fluid  style={{ background: 'linear-gradient(to right, #2359F4, #4BC0F2)', paddingTop: '4rem' }}>
         <h2 className="text-center fw-bold fs-1 pb-5" style={{color:'#BE2E3E'}}>Our Dedicated Doctors Team</h2>
         <Row>
             <Col xs={12} lg={4} className='my-4'>

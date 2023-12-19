@@ -10,7 +10,7 @@ import PsyIcon from '../images/pyschiatry-img.png';
 
 export default function Departments() {
   return (
-    <Container fluid className="text-center" style={{ background: 'linear-gradient(to right, #4BBDF2, #2359F4)', paddingTop: '4rem' }}>
+    <Container fluid className="text-center mb-5" style={{ background: 'linear-gradient(to right, #4BBDF2, #2359F4)', paddingTop: '4rem' }}>
       <h2 className="fw-bold fs-1 pb-5" style={{color:'#BE2E3E'}}>Departments</h2>
 
       <Row xs={1} md={6} className="g-4 pb-5">

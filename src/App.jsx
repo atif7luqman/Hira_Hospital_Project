@@ -25,14 +25,12 @@ function App() {
         <Route path='/about' element={<Who />} />
         <Route path='/departments' element={<Departments />} />
         <Route path={'/values'} element={<Values />} />
-        <Route path={'/docotrs'} element={<Doctors />} />
+        <Route path={'/doctors'} element={<Doctors />} />
         <Route path='/appointment' element={<Booking />} />
         
       </Routes>
       
-      {/* <Home />
       <Values />
-      {/* <Departments data={departmentsData} /> */}
       <Departments />
       <Doctors />
       <Updates />
