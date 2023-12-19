@@ -37,7 +37,7 @@ function App() {
       <Updates />
       <Message />
       <Who />
-      <Booking /> */}
+      <Booking />
       <Subfooter/>
       <Footer />
     </div>
